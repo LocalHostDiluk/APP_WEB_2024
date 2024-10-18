@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <title>Calculadora Basica</title>
     <script src="calculadora.js"></script>
-    <title>Calculos JS</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     <div id="principal">
-        <h1>.: Calculadora Básica :.</h1>
+        <h2>.: Calculadora Basica :.</h1>
         <hr>
-        <form>
-            <label for="num1">Número 1:</label>
-            <input type="number" placeholder="Ingresa el primer número" id="num1">
-            <label for="num2">Número 2:</label>
-            <input type="number" placeholder="Ingresa el segundo número" id="num2">
-            <label for="opcion">Tipo de operación</label>
-            <select name="opcion" id="opcion">
+        <form action="">
+            <label for="n1">Numero 1: </label>
+            <input class="caja1" type="number" id="num1" autofocus>
+            <br>
+            <label for="n2">Numero 2: </label>
+            <input class="caja1" type="number" id="num2">
+            <br>
+            <label for="tipo">Tipo de operacion: </label>
+            <select class="caja1" id="opcion">
                 <option value="+" selected>Suma</option>
                 <option value="-">Resta</option>
                 <option value="*">Multiplicacion</option>
                 <option value="/">Division</option>
             </select>
-            <input type="button" value="Calcular" onclick="operaciones()"></input>
+            <br>
+            <input id="boton" type="button" value="calcular" onclick="operaciones()">
         </form>
+        <br>
         <hr>
         <div id="resultado"></div>
     </div>
+
 </body>
 </html>

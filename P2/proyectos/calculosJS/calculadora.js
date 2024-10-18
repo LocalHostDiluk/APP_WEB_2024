@@ -23,8 +23,9 @@ function operaciones(){
                 break;
         }
         escribir = document.getElementById("resultado");
-        escribir.innerHTML = `<h3> ${n1} ${operacion} ${n2} = ${resultado} </h3>`;
+        escribir.innerHTML = ` ${n1} ${operacion} ${n2} = ${resultado} `;
     }else{
+        respuesta = document.getElementById("resultado").innerHTML = `<h2>Ingrese un número válido</h2>`
         alert("Ingrese un número válido");
     }
 
