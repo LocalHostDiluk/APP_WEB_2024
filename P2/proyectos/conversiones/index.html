@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de cambio</title>
+    <script src="calculadora.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div id="principal">
+        <h2>.: Calculadora de cambio :.</h1>
+        <hr>
+        <form action="">
+            <label for="tipo">Tipo de cambio: </label>
+            <select class="caja1" id="opcion">
+                <option value="usd" selected>Peso MXN a USD</option>
+                <option value="mxn">USD a Peso MXN</option>
+                <option value="eu">Peso MXN a Euro</option>
+                <option value="mxn">Euro a Peso MXN</option>
+            </select><br><br>
+            <label for="n1">Ingrese la cantidad a convertir: </label><br>
+            <input class="caja1" type="number" id="num1" autofocus>
+            <br>
+            <input id="boton" type="button" value="calcular" onclick="operaciones()">
+        </form>
+        <br>
+        <hr>
+        <div id="resultado"></div>
+    </div>
+
+</body>
+</html>

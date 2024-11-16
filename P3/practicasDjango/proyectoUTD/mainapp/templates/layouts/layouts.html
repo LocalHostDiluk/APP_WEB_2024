@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% comment %} aqui va el bloque del titulo{% endcomment %}
+        {% endblock title %}
+    </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            margin: 0;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            background-color: lightblue;
+        }
+        
+        ul li{
+            flex-grow: 1;
+            text-align: center;
+            border: 1px solid white;
+        }
+        
+        ul li a{
+            display: block;
+            padding: 1rem;
+            color: white;
+            text-decoration: none;
+            transition: all 0.5s;
+        }
+        
+        ul li a:hover{
+            background-color: black;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        h2{
+            text-align: center;
+            text-transform:uppercase;
+            background-color: silver;
+            padding: 1rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bienvenido a mi pagina con django</h2>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'mision' %}">Mision</a></li>
+            <li><a href="{% url 'vision' %}">Vision</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+        </ul>
+    </nav>
+
+    <center>
+        {% block content %}
+        {% comment %} aqui va el bloque del contenido{% endcomment %}
+        {% endblock content %}
+    </center>
+    
+</body>
+</html>

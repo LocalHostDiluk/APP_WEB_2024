@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(75, 73, 117);
+    height: 100vmax;
+}
+
+label{
+    color: white;
+}
+
+#principal{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+h2{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    text-align: center;
+    color: white;
+    font: size 2vw;;
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+form{
+    margin-top: 2vw;
+    text-align: center;
+    color: black;
+    font-size: 2vw;
+
+}
+
+hr{
+    color: blueviolet;
+}
+
+.caja1{
+    font-size: 2vw;
+    font-weight: bolder;
+    color: black ;
+    width: 20%;
+}
+
+#opcion{
+    width: auto;
+}
+
+#boton{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    padding: 2vw;
+    font-size: 2vw;
+    background-color: rgb(194, 193, 228);
+    border-radius: 10%;
+    border: 1px rgb(196, 195, 229);
+    color: white;
+}
+
+#boton:hover{
+    background-color: black;
+    border: 1px solid black;
+}
+
+#boton:active{
+    background-color: green;
+    border: 1px solid green;
+    color: black;
+}
+
+#resultado{
+    display: block;
+    margin: 15px auto;
+    width: 50%;
+    padding: 2vw;
+    font-size: 2vw;
+    color: black;
+    background-color: rgb(194, 193, 228);
+    text-align: center;
+}

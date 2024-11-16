@@ -184,6 +184,73 @@ body{
     background-color: #5db8f8;
 }
 
+/* APLICAR ESTILOS A LA SECCION "trabajos" */
+
+#mistrabajos{
+    background-color:aliceblue;
+    height: 100vmin;
+    background-size: cover;
+}
+.contenedor hr{
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+}
+.contenedor-tabajos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.trabajo p{
+    font-size: 2.5vmin;
+}
+
+.trabajo h4{
+    font-size: 3vmin;
+}
+
+.trabajo{
+    width: 23%;
+    padding: 2vw;
+    border-radius: 5%;
+    margin-bottom: 2vw;
+    background-color: silver;
+}
+
+
+/* APLICAR ESTILOS A LA SECCION "contacto" */
+
+
+
+
+/* APLICAR ESTILOS A LA SECCION "blog" */
+
+.contenedor-blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* APLICAR ESTILOS A LA SECCION "contacto" */
+
+#contacto{
+    background-color: #5db8f8;
+}
+
+#contacto .contenedor{
+    margin: auto;
+    display: block;
+    text-align: center;
+    background-color: beige;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
 /* Aplicar estilos a el atributo class */
 
 [class^="icon-"]{
@@ -214,3 +281,4 @@ body{
 .burbujas p{
     font-size: 1.5vw;
 }
+
