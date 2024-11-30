@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Inicio de sesiòn</title>
+    <link rel="stylesheet" href="{% static "css/login.css" %}">
+</head>
+<body>
+        
+    <div class="container">
+        <div class="container-form">
+            <form class="sign-in" action="" method="post">
+                <h2>Iniciar Sesión</h2>
+                <div class="social-networks">
+                </div>
+                <span>Use su correo y contraseña</span>
+                <div class="container-input">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" id="correolog" name="correolog" placeholder="Usuario/correo">
+                </div>
+                <div class="container-input">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="passlog" name="passlog" placeholder="Contraseña">
+                </div>
+                <input type="submit" class="button" name="btningresar">
+            </form>
+        </div>
+
+        <div class="container-welcome">
+            <div class="welcome-sign-up welcome">
+                <h3>¡Bienvenido!</h3>
+                <p>Ingrese sus datos personales para usar todas las funciones del sitio</p>
+                <a href="{% url "registro" %}" class="button" id="btn-sign-up">Registrarse</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

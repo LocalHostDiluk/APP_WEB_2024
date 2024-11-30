@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,67 +9,33 @@
         {% comment %} aqui va el bloque del titulo{% endcomment %}
         {% endblock title %}
     </title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-
-        ul{
-            margin: 0;
-            list-style: none;
-            padding: 0;
-            display: flex;
-            background-color: lightblue;
-        }
-        
-        ul li{
-            flex-grow: 1;
-            text-align: center;
-        }
-        
-        ul li a{
-            display: block;
-            padding: 1rem;
-            color: white;
-            text-decoration: none;
-            transition: all 0.5s;
-        }
-        
-        ul li a:hover{
-            background-color: black;
-            background-color: rgba(0, 0, 0, 0.4);
-            border-radius: 5px;
-        }
-
-        h2{
-            text-align: center;
-            text-transform:uppercase;
-            background-color: silver;
-            padding: 1rem;
-            margin: 0;
-            background-color: rgb(196, 195, 229);
-        }
-    </style>
+    <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css">
 </head>
 <body>
-    <h2>Evaluacion rapida 1</h2>
-
+    
+    <header>
+        <div id="logotipo">
+            <img src="{% static "img/logo.png" %}" alt="Imagen Django" title="Django">
+            <h1>Evaluacion rapida 1</h1>
+        </div>
+    </header>
     <nav>
         <ul>
-            <li><a href="{% url 'index' %}">Inicio</a></li>
-            <li><a href="{% url 'mision' %}">Mision</a></li>
-            <li><a href="{% url 'vision' %}">Vision</a></li>
-            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'index' %}" >Inicio</a></li>
+            <li><a href="{% url 'mision' %}">Misión</a></li>
+            <li><a href="{% url 'vision' %}">Visión</a></li>
+            <li><a href="{% url 'about' %}">Acerca de</a></li>
+            <li><a href="{% url 'registro' %}">Registro</a></li>
+            <li><a href="{% url 'login' %}">Inicio de sesión</a></li>
         </ul>
     </nav>
-
-    <center>
-        {% block content %}
-        {% comment %} aqui va el bloque del contenido{% endcomment %}
-        {% endblock content %}
-    </center>
-
-    
+    <section id="content">
+        <div class="box">
+            {% block content %}{% endblock content %}
+        </div>
+    </section>
+    <footer>
+        <p>Django con Dagonline &copy; 2024 | Visitado el: 01/10/24</p>
+    </footer>
 </body>
 </html>
